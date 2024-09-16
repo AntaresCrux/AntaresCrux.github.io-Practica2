@@ -1,0 +1,143 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #14242e;
+    background-image: url('Resources/Fondo.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Necesario para el posicionamiento absoluto de la imagen */
+}
+
+.overlay-image {
+    position: absolute; /* Posiciona la imagen sobre todo el contenido */
+    top: 3px; /* Ajusta la posición desde la parte superior */
+    left: 707px; /* Ajusta la posición desde la parte izquierda */
+    z-index: 1; /* Asegura que la imagen esté sobre el contenido */
+    pointer-events: none; /* Hace que la imagen no interfiera con el clics en el contenido debajo */
+}
+
+.overlay-image img {
+    width: 85px;  /*Ajusta el ancho de la imagen */
+    height: 85px; /* Mantiene la relación de aspecto */
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    position: relative; /* Necesario para que el z-index funcione */
+    /*z-index: 2; Asegura que el contenido esté por encima de la imagen */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.columns {
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    align-items: flex-start; /* Alinea las columnas al principio del contenedor (puedes cambiar a center si deseas que estén centradas verticalmente también) */
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    max-width: 45%; /* Ajusta el ancho máximo de cada columna para que no ocupen todo el ancho disponible */
+}
+
+h2 {
+    text-align: center;
+    font-size: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+input{
+    padding: 10px;
+    margin-top: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+}
+
+#rfcButton {
+    padding: 10px;
+    margin-top: 20px;
+    width: 220px;
+    background-color: #14242e;
+    color: white;
+    border: 1px solid #ccc;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#rfcButton:hover {
+    background-color: #203949;
+}
+
+#resultadoRFC {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    width: 200px;
+    height: 15px;
+    font-size: 12px;
+}
+
+#userId {
+    padding: 10px;
+    margin-top: 5px;
+    width: 95px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+}
+
+#apiButton {
+    padding: 10px;
+    margin-top: 20px;
+    width: 280px;
+    background-color: #14242e;
+    color: white;
+    border: 1px solid #ccc;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#apiButton:hover {
+    background-color: #203949;
+}
+
+#apiResult {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    width: 260px;
+    height: 240px;
+    font-size: 12px;
+}

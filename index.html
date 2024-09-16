@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de RFC y Consumo API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay-image">
+        <img src="Resources/GatoAcostado.png" alt="Imagen Overlay">
+    </div>
+    <div class="container">
+        <h1>CRUX SYSTEM</h1>
+        <!-- Contenedor para las dos columnas -->
+        <div class="columns">
+            <div class="column">
+                <h2>RFC</h2>
+                <form id="rfcForm">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="apellidoPaterno">Apellido Paterno:</label>
+                    <input type="text" id="apellidoPaterno" name="apellidoPaterno" required>
+                    <label for="apellidoMaterno">Apellido Materno:</label>
+                    <input type="text" id="apellidoMaterno" name="apellidoMaterno" required>
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                    <button id="rfcButton" type="submit">Generar RFC</button>
+                </form>
+                <div id="resultadoRFC"></div>
+            </div>
+            <div class="column">
+                <h2>Usuario</h2>
+                <label for="userId">Ingrese el ID del usuario:</label>
+                <input type="number" id="userId" min="1" required>
+                <button id="apiButton">Obtener Datos</button>
+                <div id="apiResult"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
